@@ -1,0 +1,206 @@
+fileVersion: 1
+id: 827c2dcc-b9a7-4d09-9e37-e4d4858223ec
+name: STG_DW_CLIENT_BENCHMARKING_CUSTOM_FORM_STAGING_EPIC
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SRC
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0eee23fc-34ae-4ea1-9fec-4f82273e2e08
+          stepCounter: 827c2dcc-b9a7-4d09-9e37-e4d4858223ec
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UNIQCUSTOMFORMMAP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 58e5b725-4eb0-4343-87f7-7fef6054d928
+                stepCounter: 30ac19a8-49db-47a6-84e3-7fda567ea115
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e6e1b153-375f-4bef-89dc-bb53eb909976
+          stepCounter: 827c2dcc-b9a7-4d09-9e37-e4d4858223ec
+        config: {}
+        dataType: VARIANT
+        description: ""
+        name: FORMDATA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c461dc67-6620-4d24-938c-142a8e0ffce2
+                stepCounter: 30ac19a8-49db-47a6-84e3-7fda567ea115
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 739c8d3a-bee9-49eb-95eb-f821c9653aeb
+          stepCounter: 827c2dcc-b9a7-4d09-9e37-e4d4858223ec
+        config: {}
+        dataType: STRING
+        description: ""
+        name: Transfer_TransferSet_ScrnSets_ScrnSet_ScrnDesc
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: get(xmlget(xmlget(xmlget(DW_CLIENT_BENCHMARKING_CUSTOM_FORM_STAGING_EPIC.FORMDATA, 'TransferSet'), 'ScrnSets'), 'ScrnSet'), '@ScrnDesc')
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 33af2f6f-7ea3-4e48-a55b-df2f77869758
+          stepCounter: 827c2dcc-b9a7-4d09-9e37-e4d4858223ec
+        config: {}
+        dataType: STRING
+        description: ""
+        name: Transfer_TransferSet_ScrnSets_ScrnSet_Pages_Page_Id
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: get("Transfer_TransferSet_ScrnSets_ScrnSet_Pages_Page".value, '@Id')
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 54e38f0b-6d67-4a7c-afad-fb1264bf15d6
+          stepCounter: 827c2dcc-b9a7-4d09-9e37-e4d4858223ec
+        config: {}
+        dataType: STRING
+        description: ""
+        name: Transfer_TransferSet_ScrnSets_ScrnSet_Pages_Page_PageDesc
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: get("Transfer_TransferSet_ScrnSets_ScrnSet_Pages_Page".value, '@PageDesc')
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7019315e-68d6-4949-8466-c0afd0472c57
+          stepCounter: 827c2dcc-b9a7-4d09-9e37-e4d4858223ec
+        config: {}
+        dataType: STRING
+        description: ""
+        name: Transfer_TransferSet_ScrnSets_ScrnSet_Pages_Page_DataEntry_Control_DataTypeCd
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: get("Transfer_TransferSet_ScrnSets_ScrnSet_Pages_Page_DataEntry_Control".value, '@DataTypeCd')
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 462344e1-dc03-4a62-a31f-a1f79c61d939
+          stepCounter: 827c2dcc-b9a7-4d09-9e37-e4d4858223ec
+        config: {}
+        dataType: STRING
+        description: ""
+        name: Transfer_TransferSet_ScrnSets_ScrnSet_Pages_Page_DataEntry_Control_FldName
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: get("Transfer_TransferSet_ScrnSets_ScrnSet_Pages_Page_DataEntry_Control".value, '@FldName')
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 784114ef-4069-4d20-ba27-2444cb467700
+          stepCounter: 827c2dcc-b9a7-4d09-9e37-e4d4858223ec
+        config: {}
+        dataType: STRING
+        description: ""
+        name: Transfer_TransferSet_ScrnSets_ScrnSet_Pages_Page_DataEntry_Control_Id
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: get("Transfer_TransferSet_ScrnSets_ScrnSet_Pages_Page_DataEntry_Control".value, '@Id')
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 501d0127-7784-4633-a02e-ded19324058d
+          stepCounter: 827c2dcc-b9a7-4d09-9e37-e4d4858223ec
+        config: {}
+        dataType: STRING
+        description: ""
+        name: Transfer_TransferSet_ScrnSets_ScrnSet_Pages_Page_DataEntry_Control_MaxLenN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: get("Transfer_TransferSet_ScrnSets_ScrnSet_Pages_Page_DataEntry_Control".value, '@MaxLenN')
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 951ce8d2-e936-460d-a213-def1774eda5a
+          stepCounter: 827c2dcc-b9a7-4d09-9e37-e4d4858223ec
+        config: {}
+        dataType: STRING
+        description: ""
+        name: Transfer_TransferSet_ScrnSets_ScrnSet_Pages_Page_DataEntry_Control_OrderN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: get("Transfer_TransferSet_ScrnSets_ScrnSet_Pages_Page_DataEntry_Control".value, '@OrderN')
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: bee4d779-ef0e-483c-92ce-f68dfbf651cd
+          stepCounter: 827c2dcc-b9a7-4d09-9e37-e4d4858223ec
+        config: {}
+        dataType: STRING
+        description: ""
+        name: Transfer_TransferSet_ScrnSets_ScrnSet_Pages_Page_DataEntry_Control_Text
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: get("Transfer_TransferSet_ScrnSets_ScrnSet_Pages_Page_DataEntry_Control".value, '@Text')
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          DW_CLIENT_BENCHMARKING_CUSTOM_FORM_STAGING_EPIC: 30ac19a8-49db-47a6-84e3-7fda567ea115
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: DW_CLIENT_BENCHMARKING_CUSTOM_FORM_STAGING_EPIC
+        join:
+          joinCondition: |-
+            FROM {{ ref('SRC', 'DW_CLIENT_BENCHMARKING_CUSTOM_FORM_STAGING_EPIC') }} "DW_CLIENT_BENCHMARKING_CUSTOM_FORM_STAGING_EPIC", 
+            LATERAL FLATTEN(input => get(xmlget(xmlget(xmlget(xmlget(DW_CLIENT_BENCHMARKING_CUSTOM_FORM_STAGING_EPIC.FORMDATA, 'TransferSet'), 'ScrnSets'), 'ScrnSet'), 'Pages'), '$')) "Transfer_TransferSet_ScrnSets_ScrnSet_Pages_Page", 
+            LATERAL FLATTEN(input => get(xmlget("Transfer_TransferSet_ScrnSets_ScrnSet_Pages_Page".value, 'DataEntry'), '$')) "Transfer_TransferSet_ScrnSets_ScrnSet_Pages_Page_DataEntry_Control"
+        name: STG_DW_CLIENT_BENCHMARKING_CUSTOM_FORM_STAGING_EPIC
+        noLinkRefs: []
+  name: STG_DW_CLIENT_BENCHMARKING_CUSTOM_FORM_STAGING_EPIC
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node
