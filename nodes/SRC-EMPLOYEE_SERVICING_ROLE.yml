@@ -1,0 +1,92 @@
+fileVersion: 1
+id: e85b47b2-3b87-407c-8379-db13c442f655
+name: EMPLOYEE_SERVICING_ROLE
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 422826ee-8feb-42ba-a9a2-e3bba3966f97
+          stepCounter: e85b47b2-3b87-407c-8379-db13c442f655
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: EMPLOYEE_SERVICING_ROLE_ID
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 331af6fb-e603-4525-8f5f-196665fb83ed
+          stepCounter: e85b47b2-3b87-407c-8379-db13c442f655
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: DW_CLIENT_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 44bcb5b6-cc07-446b-8b2b-ecbd3978636c
+          stepCounter: e85b47b2-3b87-407c-8379-db13c442f655
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: EMPLOYEE_SERVICING_ROLE_TYPE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1ab6a88c-49a7-4fcd-8184-d02ffd62cc23
+          stepCounter: e85b47b2-3b87-407c-8379-db13c442f655
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: EMPLOYEE_NAME
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: EMPLOYEE_SERVICING_ROLE
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

@@ -1,0 +1,73 @@
+fileVersion: 1
+id: 6044a4d6-9589-4e16-aebf-3ec9ff9f659f
+name: DW_CLIENT_CURRENT
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1c151133-cf16-42d9-976e-34db3a9b5235
+          stepCounter: 6044a4d6-9589-4e16-aebf-3ec9ff9f659f
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: DW_CLIENT_ID
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 989ad39a-b73e-4843-bcc9-f1a77a061c0b
+          stepCounter: 6044a4d6-9589-4e16-aebf-3ec9ff9f659f
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: LOOKUP_CODE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9ba432ea-b696-4e3d-8ae2-365324e4cf1a
+          stepCounter: 6044a4d6-9589-4e16-aebf-3ec9ff9f659f
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: ACTIVE_FLAG
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: DW_CLIENT_CURRENT
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node
