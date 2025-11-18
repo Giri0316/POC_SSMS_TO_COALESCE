@@ -1,0 +1,320 @@
+fileVersion: 1
+id: 49ce70e5-a81b-4c4e-8616-55b4c2c9f7f1
+name: DW_CLIENT_BENCHMARKING_CLIENT_PROGRAM
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: SP11
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 935a26ed-202d-44fd-8fac-b7f200684701
+          stepCounter: 49ce70e5-a81b-4c4e-8616-55b4c2c9f7f1
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: DW_CLIENT_BENCHMARKING_CLIENT_PROGRAM_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e636bf64-002f-459d-9484-055dee8eb18f
+          stepCounter: 49ce70e5-a81b-4c4e-8616-55b4c2c9f7f1
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: DW_CLIENT_BENCHMARKING_CLIENT_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 96b1b9e6-3d52-473d-840b-61930b7ec104
+          stepCounter: 49ce70e5-a81b-4c4e-8616-55b4c2c9f7f1
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: DW_CLIENT_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4f0963b4-7c10-4e2a-a30e-ee5ccca6a5d7
+          stepCounter: 49ce70e5-a81b-4c4e-8616-55b4c2c9f7f1
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: CLIENT_BENCHMARKING_PROGRAM_TYPE_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 61cf7209-d06b-4eef-af1d-d24ccb2e309f
+          stepCounter: 49ce70e5-a81b-4c4e-8616-55b4c2c9f7f1
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: PRIMARY_LIMIT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e78c577e-be53-41c9-8d06-fe25c9225a19
+          stepCounter: 49ce70e5-a81b-4c4e-8616-55b4c2c9f7f1
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: PRIMARY_PREMIUM
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3996b907-e4d1-492b-95f6-e0d5f059962a
+          stepCounter: 49ce70e5-a81b-4c4e-8616-55b4c2c9f7f1
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: PRIMARY_SIR_RETENTION
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: cc457be1-3af3-4236-a4d0-4a1a3177d8ab
+          stepCounter: 49ce70e5-a81b-4c4e-8616-55b4c2c9f7f1
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: AGGREGATE_LIMIT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6bdcbf3f-60dc-4a84-8137-8b105e8e317c
+          stepCounter: 49ce70e5-a81b-4c4e-8616-55b4c2c9f7f1
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: AGGREGATE_PREMIUM
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b421851c-5659-40c1-a5ac-6b79c4908fa9
+          stepCounter: 49ce70e5-a81b-4c4e-8616-55b4c2c9f7f1
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: AGGREGATE_SIR_RETENTION
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ee569612-e050-4a92-9f57-34d836f7c2ab
+          stepCounter: 49ce70e5-a81b-4c4e-8616-55b4c2c9f7f1
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PROGRAM_TYPE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d6a7d409-1050-4e33-a0da-ec3cf8acf963
+          stepCounter: 49ce70e5-a81b-4c4e-8616-55b4c2c9f7f1
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: SOURCE_SYSTEM_POLICY_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 40192eb9-d679-49f6-ab21-20b5bf1b1f99
+          stepCounter: 49ce70e5-a81b-4c4e-8616-55b4c2c9f7f1
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: DW_STRUCTURE_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ebc94e85-30c5-407a-8e12-810f66e8de76
+          stepCounter: 49ce70e5-a81b-4c4e-8616-55b4c2c9f7f1
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: DW_COMPANY_ID_PRIMARY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 132830d6-c227-4a82-86e1-f968681f3d13
+          stepCounter: 49ce70e5-a81b-4c4e-8616-55b4c2c9f7f1
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: DW_COMPANY_ID_AGGREGATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 76674b42-5d5a-47ae-b286-53856581d46f
+          stepCounter: 49ce70e5-a81b-4c4e-8616-55b4c2c9f7f1
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: DW_DATE_DELETED
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: DW_CLIENT_BENCHMARKING_CLIENT_PROGRAM
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node
