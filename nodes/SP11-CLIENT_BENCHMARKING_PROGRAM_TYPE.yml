@@ -1,0 +1,54 @@
+fileVersion: 1
+id: 193c1822-86a3-4da2-bd22-7f1dd6f72d0f
+name: CLIENT_BENCHMARKING_PROGRAM_TYPE
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: SP11
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c079ebd2-a873-400c-a302-e5ad63f52478
+          stepCounter: 193c1822-86a3-4da2-bd22-7f1dd6f72d0f
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: CLIENT_BENCHMARKING_PROGRAM_TYPE_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: eb784835-5b7b-4b99-8afc-1b8e804f8b11
+          stepCounter: 193c1822-86a3-4da2-bd22-7f1dd6f72d0f
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PROGRAM_TYPE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: CLIENT_BENCHMARKING_PROGRAM_TYPE
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node
