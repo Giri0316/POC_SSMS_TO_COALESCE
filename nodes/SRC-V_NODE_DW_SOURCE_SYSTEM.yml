@@ -1,0 +1,142 @@
+fileVersion: 1
+id: 1d828240-a5b0-4dab-8dea-06aeaedae242
+name: V_NODE_DW_SOURCE_SYSTEM
+operation:
+  config:
+    insertStrategy: UNION
+    selectDistinct: false
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SRC
+  materializationType: view
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 45a04719-345e-4355-b660-79fb5a9830b2
+          stepCounter: 1d828240-a5b0-4dab-8dea-06aeaedae242
+        config: {}
+        dataType: TIMESTAMP
+        description: ""
+        name: CURRENT_TIMESTAMP_
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 55754a00-9f1f-41e4-a071-b9dc89d2f4b0
+                stepCounter: 196b7db2-69fd-435f-baac-4b652740b6c0
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 31ecefc6-270f-47f0-8afc-933eab29720a
+          stepCounter: 1d828240-a5b0-4dab-8dea-06aeaedae242
+        config: {}
+        dataType: VARCHAR(100)
+        description: ""
+        name: PROC_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 932153ce-98e8-413a-99ce-c56e82ce2bc1
+                stepCounter: 196b7db2-69fd-435f-baac-4b652740b6c0
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6aa6eb21-403f-43c8-99c9-97775cef37cf
+          stepCounter: 1d828240-a5b0-4dab-8dea-06aeaedae242
+        config: {}
+        dataType: TIMESTAMP
+        description: ""
+        name: CURRENT_DATE_
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c0b33655-bed1-4300-8b24-8c6e1a0df4f9
+                stepCounter: 196b7db2-69fd-435f-baac-4b652740b6c0
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4ac21b39-fbe1-4268-a2a9-be028d1b31bd
+          stepCounter: 1d828240-a5b0-4dab-8dea-06aeaedae242
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: FIG_DEPARTMENT_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9cecc939-fc30-4095-8ae3-d291a4ae06fb
+                stepCounter: 196b7db2-69fd-435f-baac-4b652740b6c0
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e4111fd7-34ce-47ba-b25b-c70ddc28b1c5
+          stepCounter: 1d828240-a5b0-4dab-8dea-06aeaedae242
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: SOURCE_SYSTEM
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fc46d59b-a367-4768-97bb-d27bc4ba50e4
+                stepCounter: 196b7db2-69fd-435f-baac-4b652740b6c0
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 97fa29a7-1485-4bc8-87f5-303c3324419d
+          stepCounter: 1d828240-a5b0-4dab-8dea-06aeaedae242
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: AGENCY_COMPANY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0f384bbc-fae9-464e-b108-82f60af3ff9a
+                stepCounter: 196b7db2-69fd-435f-baac-4b652740b6c0
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3af1b8f5-9f57-4db2-8d16-8c83b2e2266e
+          stepCounter: 1d828240-a5b0-4dab-8dea-06aeaedae242
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: DW_SOURCE_SYSTEM_ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: eb5d3e28-af31-4203-b68c-f92c55be7835
+                stepCounter: 49d92a82-8d4e-49a0-90ba-2e87e21d10a0
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          DW_SOURCE_SYSTEM: 49d92a82-8d4e-49a0-90ba-2e87e21d10a0
+          V_NODE: 196b7db2-69fd-435f-baac-4b652740b6c0
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: DW_SOURCE_SYSTEM
+          - locationName: SRC
+            nodeName: V_NODE
+        join:
+          joinCondition: |-
+            FROM {{ ref('SRC', 'V_NODE') }} "V_NODE"
+            INNER JOIN {{ ref('SRC', 'DW_SOURCE_SYSTEM') }} "DW_SOURCE_SYSTEM"
+            ON "V_NODE"."SOURCE_SYSTEM" = "DW_SOURCE_SYSTEM"."SOURCE_SYSTEM"
+            AND "V_NODE"."AGENCY_COMPANY" = "DW_SOURCE_SYSTEM"."AGENCY_COMPANY"
+        name: V_NODE_DW_SOURCE_SYSTEM
+        noLinkRefs: []
+  name: V_NODE_DW_SOURCE_SYSTEM
+  overrideSQL: false
+  schema: ""
+  sqlType: View
+  type: sql
+  version: 1
+type: Node
