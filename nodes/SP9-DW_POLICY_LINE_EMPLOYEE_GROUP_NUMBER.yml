@@ -1,0 +1,54 @@
+fileVersion: 1
+id: 2b0ae4fb-016f-4fc9-a7f1-0e15198d0e80
+name: DW_POLICY_LINE_EMPLOYEE_GROUP_NUMBER
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: SP9
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3ac274d6-fb36-408a-8834-742f8e1e331f
+          stepCounter: 2b0ae4fb-016f-4fc9-a7f1-0e15198d0e80
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: STUFF_STRING
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3aa0c68b-00c5-4b34-bfbb-e0e348f80798
+          stepCounter: 2b0ae4fb-016f-4fc9-a7f1-0e15198d0e80
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: DW_POLICY_LINE_EMPLOYEE_GROUP_NUMBER
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: DW_POLICY_LINE_EMPLOYEE_GROUP_NUMBER
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

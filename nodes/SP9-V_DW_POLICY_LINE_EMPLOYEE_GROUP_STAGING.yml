@@ -1,0 +1,67 @@
+fileVersion: 1
+id: 3da751f8-4c4d-4e9d-b861-ad841b846ba6
+name: V_DW_POLICY_LINE_EMPLOYEE_GROUP_STAGING
+operation:
+  config:
+    insertStrategy: UNION
+    selectDistinct: false
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SP9
+  materializationType: view
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 84a413c6-70b6-4ec4-8424-c8fb0bed58db
+          stepCounter: 3da751f8-4c4d-4e9d-b861-ad841b846ba6
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: UNIQLINE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4ef66efb-4c50-457f-9b00-a0d2a81f9b06
+                stepCounter: 6cc40e70-2886-4933-966f-522fab313033
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 69bd73bc-aee8-4b6e-9a10-785ec5d06dcb
+          stepCounter: 3da751f8-4c4d-4e9d-b861-ad841b846ba6
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: STUFF_STRING
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1eae1bb3-1788-45e8-87de-99e8c69465a8
+                stepCounter: 6cc40e70-2886-4933-966f-522fab313033
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          DW_POLICY_LINE_EMPLOYEE_GROUP_STAGING: 6cc40e70-2886-4933-966f-522fab313033
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SP9
+            nodeName: DW_POLICY_LINE_EMPLOYEE_GROUP_STAGING
+        join:
+          joinCondition: |-
+            FROM {{ ref('SP9', 'DW_POLICY_LINE_EMPLOYEE_GROUP_STAGING') }} "DW_POLICY_LINE_EMPLOYEE_GROUP_STAGING"
+            GROUP BY "UNIQLINE","STUFF_STRING"
+        name: V_DW_POLICY_LINE_EMPLOYEE_GROUP_STAGING
+        noLinkRefs: []
+  name: V_DW_POLICY_LINE_EMPLOYEE_GROUP_STAGING
+  overrideSQL: false
+  schema: ""
+  sqlType: View
+  type: sql
+  version: 1
+type: Node
