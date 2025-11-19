@@ -1,0 +1,35 @@
+fileVersion: 1
+id: 60deb643-0e5c-425b-b203-590d105afa55
+name: DW_POLICY_LINE_STATUS_GROUP
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: SP9
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d7c3000e-6f0f-41bd-96b3-cfca0016dff3
+          stepCounter: 60deb643-0e5c-425b-b203-590d105afa55
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: LINE_STATUS_CODE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: DW_POLICY_LINE_STATUS_GROUP
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node
