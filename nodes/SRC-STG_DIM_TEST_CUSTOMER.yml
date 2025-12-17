@@ -1,0 +1,124 @@
+fileVersion: 1
+id: 23165338-beef-407e-94f0-01ab92e0ea45
+name: STG_DIM_TEST_CUSTOMER
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SRC
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a50b578d-b53d-44b5-acd6-54846efcdc12
+          stepCounter: 23165338-beef-407e-94f0-01ab92e0ea45
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: CUSTOMER_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 45eb1d66-651a-4137-b742-c076e8691a9b
+                stepCounter: 02c0636f-540b-4c5d-bf84-5b0375219b4c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1f23ff8b-40a0-4943-9d28-7f34dbd8e40d
+          stepCounter: 23165338-beef-407e-94f0-01ab92e0ea45
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: CUSTOMER_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 18d48ec8-1369-43ae-a52b-a5ac1fd091c5
+                stepCounter: 02c0636f-540b-4c5d-bf84-5b0375219b4c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7ad04438-54e2-4b7c-ac42-ecbe4a0516a8
+          stepCounter: 23165338-beef-407e-94f0-01ab92e0ea45
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: EMAIL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 697f754a-9bd1-43f8-a7ed-089f2d5d8218
+                stepCounter: 02c0636f-540b-4c5d-bf84-5b0375219b4c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9382e9e7-b46f-4488-b391-ab27ec9a8dcd
+          stepCounter: 23165338-beef-407e-94f0-01ab92e0ea45
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: PHONE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7368fcf0-602c-48c3-bd1c-fbb1a994c54f
+                stepCounter: 02c0636f-540b-4c5d-bf84-5b0375219b4c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8e6e1fb5-5f3d-4da3-ad0d-315c0493d11e
+          stepCounter: 23165338-beef-407e-94f0-01ab92e0ea45
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: IS_DELETED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 48f14acf-7a2e-441e-bbfb-976b75faaade
+                stepCounter: 02c0636f-540b-4c5d-bf84-5b0375219b4c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: eca56229-a9cf-47ea-840f-016f25c7ed08
+          stepCounter: 23165338-beef-407e-94f0-01ab92e0ea45
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: UPDATED_AT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 66f2fc99-c4b2-495b-a405-3b06ec2ad596
+                stepCounter: 02c0636f-540b-4c5d-bf84-5b0375219b4c
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          DIM_TEST_CUSTOMER: 02c0636f-540b-4c5d-bf84-5b0375219b4c
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: DIM_TEST_CUSTOMER
+        join:
+          joinCondition: FROM {{ ref('SRC', 'DIM_TEST_CUSTOMER') }} "DIM_TEST_CUSTOMER"
+        name: STG_DIM_TEST_CUSTOMER
+        noLinkRefs: []
+  name: STG_DIM_TEST_CUSTOMER
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node
