@@ -1,0 +1,7 @@
+fileVersion: 1
+id: "1"
+macroString: |-
+  {% set current_timestamp = "CURRENT_TIMESTAMP()" %}
+  {% set proc_name = "'dbo.spdw_dw_client_benchmarking_policy_line_insertUpdate'" %}
+name: macro
+type: Macro
